@@ -150,8 +150,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 #intro .block img {
-  padding-left: 40px;
-  width: 100%;
+/*--  padding-left: 40px; --*/
+  max-width: 100%;
 }
 #intro .section-title {
   margin-bottom: 0px;
@@ -804,4 +804,21 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+/*--  blog images --*/
+.blogimg_small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  border-radius: 20px;
+  height: 35%;
+}
+.blogimg_med {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20px;
+  height: 50%;
 }
