@@ -61,6 +61,12 @@ a:active {
   font-style: italic;
   color: #666;
 }
+.event-section-title h2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
 /*--
 	Header Start
 --*/
@@ -805,6 +811,7 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+
 /*--  blog images --*/
 .blogimg_small {
   display: block;

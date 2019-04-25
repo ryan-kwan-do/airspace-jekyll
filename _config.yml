@@ -22,8 +22,13 @@ baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
+
+
 # Build settings
 markdown: kramdown
+#Includes future posts by default
+future: true
+
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"

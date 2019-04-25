@@ -1,0 +1,56 @@
+---
+layout: page
+title: Events
+permalink: /events/
+---
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Get the latest on what I'm doing</h1>
+          <p>Catch up with us, anytime and anywhere</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+  <div class="container">
+    <div class="row">
+        <div class="block">
+          <div class="event-section-title">
+            <h2>Upcoming Events</h2>
+        </div>
+    </div>
+  </div>
+{% assign curDate = site.time | date: '%s' %}
+{% for post in site.posts %}
+{% assign postStartDate = post.date | date: '%s' %}
+{% if post.categories contains 'event' and postStartDate >= curDate%}
+<div class="event-post-area">
+        <li><a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a></li>
+</div>
+{% endif %}
+{% endfor %}
+
+<!-- Past Events -->
+  <div class="row">
+      <div class="block">
+        <div class="event-section-title">
+          <h2>Past Events</h2>
+      </div>
+  </div>
+</div>
+{% assign curDate = site.time | date: '%s' %}
+{% for post in site.posts %}
+{% assign postStartDate = post.date | date: '%s' %}
+{% if post.categories contains 'event' and postStartDate < curDate%}
+<div class="event-post-area">
+      <li><a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a></li>
+</div>
+{% endif %}
+{% endfor %}
+</div>
